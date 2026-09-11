@@ -21,7 +21,8 @@ QueueSmart is designed to optimize the waiting experience for customers across v
 
 ### System Context Diagram
 
-![System Context Diagram Draft](./assets/system-context-diagram.png)
+![System Context Diagram Draft](./assets/scdiagram.png)
+**Explain:** The users got to login in their account for role authentication to access page. And depend on the login user, regular customer will access the schedule appointment page. Meanwhile, the staff and admin dashboard would be view different as they have the authority to manage the appointment and service. When each role take action in their page, it'll call on the queue-smart system that trigger the service that either send notification to the users or have other service available for the users to interact. 
 
 ## Acknowledgements
 
