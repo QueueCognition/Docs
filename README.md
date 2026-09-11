@@ -19,6 +19,10 @@ QueueSmart is designed to optimize the waiting experience for customers across v
 
 ## High-Level Design / Architecture
 
+### System Context Diagram
+
+![System Context Diagram Draft](./assets/system-context-diagram.png)
+
 ## Acknowledgements
 
 Gemini is used to enhance the grammar and improve the overall quality of the documentation.
