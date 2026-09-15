@@ -16,6 +16,7 @@ QueueSmart is designed to optimize the waiting experience for customers across v
 - **Administrative State Handling:** The application must gracefully handle administrative actions—such as pausing, modifying, or terminating a service—determining whether to process remaining users before closure or clear the queue, while broadcasting announcements to inform affected users of any changes.
 
 ## Development Methodology
+Our team plans to follow an Agile development methodology using Scrum-style practices. Agile is appropriate for QueueSmart because the system contains several interconnected features, including queue management, dynamic wait-time estimation, notifications, appointment scheduling, and administrative controls. These features may require refinement as the team evaluates the design and receives feedback throughout the semester. An iterative approach allows us to develop and review the system in smaller increments rather than requiring every requirement and design decision to be finalized at the beginning.
 
 ## High-Level Design / Architecture
 
