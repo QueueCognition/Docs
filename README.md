@@ -16,11 +16,21 @@ QueueSmart is designed to optimize the waiting experience for customers across v
 - **Administrative State Handling:** The application must gracefully handle administrative actions—such as pausing, modifying, or terminating a service—determining whether to process remaining users before closure or clear the queue, while broadcasting announcements to inform affected users of any changes.
 
 ## Development Methodology
-### 2.1 Methodology
+### Methodology
 Our team will follow an Agile development methodology using Scrum-style practices. We will divide the QueueSmart project into smaller tasks and develop the system incrementally throughout the semester. Team members will work on assigned tasks while communicating regularly and using GitHub to track and integrate their contributions.
 
-### 2.2 Why Agile is Appropriate
+### Why Agile is Appropriate
 Agile is appropriate for QueueSmart because the system contains several interconnected features, including queue management, appointments, notifications, dynamic wait-time estimation, and administrative controls. As we develop and evaluate these features, some requirements or design decisions may need to be refined. An iterative Agile approach allows us to identify issues early and make improvements without having to redesign the entire project at once.
+
+### Applying Agile Across Assignments
+The Agile approach will allow each assignment to build upon the previous stage of the project:
+- **A1 - Initial Design:** Define requirements, system considerations, and high-level architecture.
+- **A2 - UI/UX Design:** Design and refine how users and administrators interact with QueueSmart.
+- **A3 - API Design:** Define how the major parts of the system communicate and handle operations such as queue management and notifications.
+- **A4 - Data Design:** Define how users, services, appointments, queues, and history will be represented and stored.
+- **Final Project:** Integrate the previous designs into the complete application, followed by testing and refinement.
+
+After each stage, the team can review its progress, identify problems, and make necessary adjustments before moving to the next stage. This also allows the four team members to divide work into manageable tasks while maintaining collaboration and meaningful GitHub contributions.
 
 ## High-Level Design / Architecture
 
