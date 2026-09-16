@@ -1,0 +1,61 @@
+---
+config:
+  layout: fixed
+---
+flowchart TB
+ subgraph Frontend["Frontend"]
+        Web["Web Application"]
+  end
+ subgraph BackendAPI["QueueSmart Backend API"]
+        Auth["Authentication"]
+        Appointments["Calender Service"]
+        Queue["Queue Service"]
+        Notifications["Notification Service"]
+        StaffAdmin["Telemetary Service"]
+  end
+ subgraph Database["Database"]
+        DB[("Database")]
+  end
+ subgraph External["External Services"]
+        GoogleCal["Google Calendar API"]
+        EmailSMS["Email/SMS Provider"]
+  end
+    Web -- <br> --> Queue & Appointments
+    Appointments --> DB
+    Queue --> DB
+    Appointments L_Appointments_GoogleCal_0@-- <br> --> GoogleCal
+    Notifications L_Notifications_EmailSMS_0@-- <br> --> EmailSMS
+    Auth --> DB
+    Notifications --> DB
+    Web --> Auth & StaffAdmin & Notifications & n3["Support Service"]
+    StaffAdmin L_StaffAdmin_DB_0@--> DB
+    n3 --> DB
+    n1["User"] --> Frontend
+    n2["Administrator"] --> Frontend
+
+    n3@{ shape: rect}
+    n1@{ shape: rect}
+    n2@{ shape: rect}
+     Web:::frontend
+     Auth:::api
+     Appointments:::api
+     Queue:::api
+     Notifications:::api
+     StaffAdmin:::api
+     DB:::database
+     GoogleCal:::external
+     EmailSMS:::external
+     n3:::api
+    classDef frontend stroke:#3b82f6,fill:#dbeafe
+    classDef api stroke:#8b5cf6,fill:#ede9fe
+    classDef database stroke:#10b981,fill:#d1fae5
+    classDef external stroke:#f97316,fill:#ffedd5
+    style n1 stroke:#D50000,fill:#ede9fe
+    style n2 stroke:#D50000,fill:#ede9fe
+
+    L_Web_Appointments_0@{ curve: linear } 
+    L_Appointments_GoogleCal_0@{ curve: linear } 
+    L_Notifications_EmailSMS_0@{ curve: linear } 
+    L_Web_StaffAdmin_0@{ curve: linear } 
+    L_Web_Notifications_0@{ curve: linear } 
+    L_StaffAdmin_DB_0@{ curve: linear }
