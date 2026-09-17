@@ -1,5 +1,7 @@
 # QueueSmart Quickstart
 
+[Mermaid](https://github.com/mermaid-js/mermaid) is used to create and generate diagrams for this project.
+
 ## Initial Thoughts
 
 QueueSmart is designed to optimize the waiting experience for customers across various service environments. Users—such as students, customers, or citizens—interact with the software through an intuitive interface, allowing them to check in personally using their smartphones or on-site devices. Users have the ability to join a queue for a service, monitor their live status, and receive real-time updates regarding their position and estimated wait times. Managers (administrators) can configure and register available services, manage active queues, monitor analytics, and generate reports.
