@@ -15,11 +15,11 @@ flowchart LR
         n4["Admin"]
   end
  subgraph s3["QueueSmart Backend"]
-        n6["Notification Service (notifies upon creation, cancellation, and reschdulation of appointment)"]
-        n7["Support Service(users can submit tickets/reach customer support)"]
+        n6["Notification Service (notifies upon creation, cancellation, and rescheduling of appointments)"]
+        n7["Support Service (users can submit tickets/reach customer support)"]
         n8["Queue Service (make appointments, cancel, reschedule, view position)"]
-        n9["Telemetry Service (analysis/moniter)"]
-        n10["Calender Service (can see upcoming appointments and sync to google calender)"]
+        n9["Telemetry Service (analysis/monitoring)"]
+        n10["Calendar Service (can see upcoming appointments and sync to Google Calendar)"]
         n11["Authentication (staff login, optional customer login)"]
   end
  subgraph s4["Database"]
