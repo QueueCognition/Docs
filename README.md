@@ -49,7 +49,7 @@ After each stage, the team can review its progress, identify problems, and make 
 
 ### Container Diagram
 
-![Container Diagram](./assets/new_container_diagram.png)
+![Container Diagram](./assets/fixed_container_diagram.png)
 
 ## Acknowledgements
 
