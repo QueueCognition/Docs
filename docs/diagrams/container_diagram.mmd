@@ -1,0 +1,67 @@
+---
+config:
+  layout: fixed
+  flowchart:
+    curve: linear
+---
+flowchart LR
+ subgraph s1["Frontend"]
+        n5["Web Interface"]
+  end
+ subgraph s2["Users"]
+        n2["Guest"]
+        n1["Customer"]
+        n3["Staff"]
+        n4["Admin"]
+  end
+ subgraph s3["QueueSmart Backend"]
+        n6["Notification Service (notifies upon creation, cancellation, and reschdulation of appointment)"]
+        n7["Support Service(users can submit tickets/reach customer support)"]
+        n8["Queue Service (make appointments, cancel, reschedule, view position)"]
+        n9["Telemetry Service (analysis/moniter)"]
+        n10["Calender Service (can see upcoming appointments and sync to google calender)"]
+        n11["Authentication (staff login, optional customer login)"]
+  end
+ subgraph s4["Database"]
+        n12["Database"]
+  end
+ subgraph s5["External Services"]
+        n13["Email/SMS Provider"]
+        n14["Google Calender"]
+  end
+ subgraph s6["QueueSmart"]
+        n15[" "]
+  end
+    n2 L_n2_n5_0@--> n5
+    n1 --> n5
+    n3 --> n5
+    n4 --> n5
+    n5 --> n6 & n7 & n8 & n9 & n10 & n11
+    n11 --> n12
+    n10 --> n12 & n14
+    n8 --> n12
+    n7 --> n12
+    n6 --> n12 & n13
+    n9 --> n12
+
+    n2@{ shape: text}
+    n1@{ shape: text}
+    n3@{ shape: text}
+    n4@{ shape: text}
+    n6@{ shape: rect}
+    n7@{ shape: rect}
+    n8@{ shape: rect}
+    n9@{ shape: rect}
+    n10@{ shape: rect}
+    n11@{ shape: rect}
+    n12@{ shape: rect}
+    n13@{ shape: rect}
+    style n5 stroke:#000000,stroke-width:1px,stroke-dasharray: 0
+    style n2 stroke-width:1px,stroke-dasharray: 0,stroke:#000000,fill:#ffffff
+    style n1 stroke-width:1px,stroke-dasharray: 0,stroke:#000000,fill:#ffffff
+    style n3 stroke-width:1px,stroke-dasharray: 0,stroke:#000000,fill:#ffffff
+    style n4 stroke-width:1px,stroke-dasharray: 0,stroke:#000000,fill:#ffffff
+    style n6 stroke-width:1px,stroke-dasharray: 0
+    style n15 stroke-width:0px,stroke-dasharray:0,fill:transparent
+
+    L_n2_n5_0@{ curve: linear }
