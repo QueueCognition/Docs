@@ -49,7 +49,7 @@ After each stage, the team can review its progress, identify problems, and make 
 
 ### Container Diagram
 
-![Context Diagram Draft](./assets/context-diagram-draft.png)
+![Container Diagram](./assets/container_diagram.png)
 
 ## Acknowledgements
 
